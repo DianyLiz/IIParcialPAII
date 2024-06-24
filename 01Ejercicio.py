@@ -11,7 +11,7 @@ import os
 os.system('cls' if os.name == 'nt' else 'clear')
 
 def devolver_distintos(a, b, c):
-    suma= a + b + c
+    suma = a + b + c
     if suma > 15:
         resultado = max(a, b, c)
     elif suma < 10:
@@ -20,8 +20,14 @@ def devolver_distintos(a, b, c):
         resultado = a + b + c - max(a, b, c) - min(a, b, c)
     return resultado
 
-    return resultado.sort():
+# Función para ordenar y devolver los valores
+def ordena_valores(a, b, c):
+    valores = [a, b, c]
+    valores.sort()
+    return valores
 
+print(devolver_distintos(8, 2, 3))
+print(ordena_valores(8, 2, 3))
 
 
 print(devolver_distintos(8, 2, 3))
